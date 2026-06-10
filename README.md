@@ -42,8 +42,8 @@ pfa2 = cpf(A, method="H")
 print(pfa1, pfa2)
 ```
 
-> [!WARNING]
-> On Windows, the C bindings require MSYS2 to be installed with the MinGW64 toolchain. The current Windows build system has some limitations and requires external dependencies. We welcome contributions to improve the Windows build system, such as using Microsoft's toolchain (MSVC) directly or finding better ways to handle the OpenBLAS dependency.
+> [!NOTE]
+> Building from source on Windows (only needed if no wheel is available for your platform) requires MSYS2 with the MinGW64 toolchain (`mingw-w64-x86_64-gcc-fortran`, `mingw-w64-x86_64-openblas`, and `mingw-w64-x86_64-pkgconf`).
 
 ## Citing
 
